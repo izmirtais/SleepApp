@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.uts.R;
 import com.example.uts.fragments.AlamFragment;
 import com.example.uts.fragments.LoveFragment;
+import com.example.uts.fragments.MeditasiFragment;
 
 public class MulaiActivity extends AppCompatActivity {
 
@@ -32,4 +33,27 @@ public class MulaiActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
+    public void handleMeditasi(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.mulai, new MeditasiFragment(), "MEDITASI_FRAGMENT");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
+    public void handleBird(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.mulai, new AlamFragment(), "ALAM_FRAGMENT");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
+    public void handleRain(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.mulai, new AlamFragment(), "ALAM_FRAGMENT");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
+
 }

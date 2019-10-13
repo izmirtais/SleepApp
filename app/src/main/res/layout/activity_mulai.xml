@@ -28,6 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rain"
         app:layout_constraintStart_toEndOf="@+id/love"
+        android:onClick="handleMeditasi"
         app:srcCompat="@drawable/meditasi" />
 
     <ImageView
@@ -36,6 +37,7 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="handleRain"
         app:srcCompat="@drawable/rain" />
 
     <ImageView
@@ -45,6 +47,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/meditasi"
         app:layout_constraintStart_toEndOf="@+id/love"
+        android:onClick="handleAlam"
         app:srcCompat="@drawable/alam" />
 
     <ImageView
@@ -54,6 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rain"
         app:layout_constraintStart_toEndOf="@+id/meditasi"
+        android:onClick="handleBird"
         app:srcCompat="@drawable/bird" />
 
     <ImageView
