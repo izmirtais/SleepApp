@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwelcome"
+    tools:context=".activities.MulaiActivity">
+
+    <FrameLayout
+        android:id="@+id/mulai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/love"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/love"
+        android:onClick="handleLove"/>
+
+    <ImageView
+        android:id="@+id/meditasi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rain"
+        app:layout_constraintStart_toEndOf="@+id/love"
+        app:srcCompat="@drawable/meditasi" />
+
+    <ImageView
+        android:id="@+id/rain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rain" />
+
+    <ImageView
+        android:id="@+id/alam"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/meditasi"
+        app:layout_constraintStart_toEndOf="@+id/love"
+        app:srcCompat="@drawable/alam" />
+
+    <ImageView
+        android:id="@+id/bird"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rain"
+        app:layout_constraintStart_toEndOf="@+id/meditasi"
+        app:srcCompat="@drawable/bird" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="414dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="@+id/meditasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
