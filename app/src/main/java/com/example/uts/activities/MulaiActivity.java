@@ -40,6 +40,7 @@ public class MulaiActivity extends AppCompatActivity {
 
     public void handleMeditasi(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_left, R.anim.exit_from_left, R.anim.enter_from_right, R.anim.exit_from_right);
         fragmentTransaction.replace(R.id.mulai, new MeditasiFragment(), "MEDITASI_FRAGMENT");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
@@ -47,6 +48,7 @@ public class MulaiActivity extends AppCompatActivity {
 
     public void handleBird(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         fragmentTransaction.replace(R.id.mulai, new HewanFragment(), "HEWAN_FRAGMENT");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
@@ -54,6 +56,7 @@ public class MulaiActivity extends AppCompatActivity {
 
     public void handleRain(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_left, R.anim.exit_from_left, R.anim.enter_from_right, R.anim.exit_from_right);
         fragmentTransaction.replace(R.id.mulai, new HujanFragment(), "HUJAN_FRAGMENT");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
