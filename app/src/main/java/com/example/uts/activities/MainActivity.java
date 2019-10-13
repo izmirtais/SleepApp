@@ -16,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void handlertentang(View view) {
-
-    }
-
     public void handleMulai(View view) {
         Intent intent = new Intent(this, MulaiActivity.class);
+        startActivity(intent);
+    }
+
+    public void handlerTentang(View view) {
+        Intent intent = new Intent(this, TentangActivity.class);
         startActivity(intent);
     }
 }
