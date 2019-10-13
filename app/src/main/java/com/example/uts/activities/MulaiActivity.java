@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.uts.R;
+import com.example.uts.fragments.AlamFragment;
 import com.example.uts.fragments.LoveFragment;
 
 public class MulaiActivity extends AppCompatActivity {
@@ -25,5 +26,10 @@ public class MulaiActivity extends AppCompatActivity {
     }
 
 
-
+    public void handleAlam(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.mulai, new AlamFragment(), "ALAM_FRAGMENT");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
 }

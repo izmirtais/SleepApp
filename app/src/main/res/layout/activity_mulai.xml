@@ -62,6 +62,7 @@
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="@+id/meditasi"
         app:layout_constraintStart_toStartOf="parent"
+        android:onClick="handleAlam"
         app:srcCompat="@drawable/line" />
 
 
